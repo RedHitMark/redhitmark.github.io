@@ -1,0 +1,294 @@
+/** Reset all tags **/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+/** Box Model **/
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/** Body **/
+body {
+    background-color: #f1f1f1;
+}
+
+
+/** Responsive Images **/
+img {
+    max-width: 100%;
+}
+
+
+/** Header **/
+#header {
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    padding: 1em;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.8);
+    z-index: 5;
+}
+#header > #desktop-header {
+    display: block;
+}
+#header > #desktop-header > #desktop-logo {
+    float: left;
+}
+#header > #desktop-header > #desktop-logo > a {
+    color: white;
+}
+#header > #desktop-header > nav {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#header > #desktop-header > nav > a{
+    color: white;
+    padding-left: 1em;
+}
+#header > #mobile-header {
+    display: none;
+}
+#header > #mobile-header > #mobile-logo {
+    float: left;
+}
+#header > #mobile-header > #mobile-logo > a {
+    color: white;
+}
+#header > #mobile-header > #hamburger-button {
+    float: right;
+    color: white;
+    font-weight: bolder;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+#header > #mobile-header > #mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header > #mobile-header > #mobile-menu > #close-mobile-menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 1.5em;
+    line-height: 0.5;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+#header > #mobile-header > #mobile-menu > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#header > #mobile-header > #mobile-menu > nav > a {
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+@media (max-width: 800px) {
+    #header > #desktop-header {
+        display: none;
+    }
+    #header > #mobile-header {
+        display: block;
+    }
+}
+
+
+/** Intro **/
+#intro {
+    background-image: url("../images/technology-785742_1920.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+}
+#intro > #intro-container {
+    width: 60%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#intro > #intro-container > h1 {
+    color: #fff;
+}
+#intro > #intro-container > h2 {
+    color: #fff;
+}
+#intro > #intro-container > #discover-button {
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.6em;
+}
+#intro > #intro-container > #discover-button > i {
+    transition: transform 0.3s;
+}
+#intro > #intro-container > #discover-button:hover > i {
+    transform: rotate(90deg);
+}
+
+
+/** Wrapper **/
+#wrapper {
+    margin: 0 auto;
+    padding: 4em 0 0 0;
+}
+#wrapper > .container {
+    max-width: 100%;
+    margin: 1em auto;
+    padding: 0 2em;
+}
+#wrapper > .container > .row {
+    display: flex;
+    flex-direction: row;
+}
+#wrapper > .container > .row > .col-20 {
+    width: 20%;
+}
+#wrapper > .container > .row > .col-33 {
+    width: 33.3333%;
+}
+#wrapper > .container > .row > .col-30 {
+    width: 30%;
+}
+#wrapper > .container > .row > .col-50 {
+    width: 50%;
+}
+#wrapper > .container > .row > .col-66 {
+    width: 66.66666%;
+}
+#wrapper > .container > .row > .col-70 {
+    width: 70%;
+}
+#wrapper > .container > .row > .col-80 {
+    width: 80%;
+}
+#wrapper > .container > .row > .col-100 {
+    width: 100%;
+}
+#wrapper > .container > .row > * {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#wrapper > .container > .row > *:last-child {
+    margin-right: 0;
+}
+#wrapper > .container > .row > *:first-child {
+    margin-left: 0;
+}
+@media screen and (max-width: 1024px) {
+    #wrapper {
+        padding: 2em 0 0 0;
+    }
+    #wrapper > .container {
+        padding: 0 1em;
+    }
+}
+@media screen and (max-width: 800px) {
+    #wrapper > .container > .row {
+        flex-direction: column;
+    }
+    #wrapper > .container > .row > .col-20,
+    #wrapper > .container > .row > .col-30,
+    #wrapper > .container > .row > .col-33,
+    #wrapper > .container > .row > .col-50,
+    #wrapper > .container > .row > .col-66,
+    #wrapper > .container > .row > .col-70,
+    #wrapper > .container > .row > .col-80,
+    #wrapper > .container > .row > .col-100 {
+        width: 100% !important;
+    }
+}
+
+
+/** Card **/
+.card {
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+/** About **/
+#about {
+
+}
+
+
+/** Skills **/
+#skills {
+
+}
+.skill {
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+.css {width: 80%; background-color: #2196F3;}
+
+
+/** Projects **/
+#projects {
+
+}
+
+
+/** Contact **/
+#contact {
+
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/** Footer **/
+#footer {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background: #090909;
+    color: #f1f1f1;
+}

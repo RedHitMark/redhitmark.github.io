@@ -2,19 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Marco Russodivito - Sviluppatore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+
+    <title>Marco Russodivito - Italian Developer</title>
+
+    <meta name="robots" content="index, follow"/>
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+
+    <meta name="description" content="I'm an Italian computer science student based in Campobasso. I'm into cybersecurity and backend development"/>
+    <meta name="keywords" content="dev,security,backend,italy"/>
+
+    <meta name="author" content="Marco Russodivito"/>
+    <meta name="copyright" content="Marco Russodivito"/>
+
+    <!-- Open Graph -->
+    <!--<meta property="fb:app_id" content="9999999"/>-->
+    <meta property="og:locale" content="it_IT"/>
+    <meta property="og:type" content="page"/>
+    <meta property="og:title" content="Marco Russodivito - Italian Developer"/>
+    <meta property="og:description" content="I'm an Italian computer science student based in Campobasso. I'm into cybersecurity and backend development"/>
+    <meta property="og:url" content="https://silveriodabate.it"/>
+    <meta property="og:site_name" content="Marco Russodivito"/>
+    <meta property="og:updated_time" content="2020-06-06T21:43:20+02:00"/>
+    <meta property="og:image" content="images/horizontal/3.jpeg"/>
+    <meta property="og:image:secure_url" content="images/horizontal/3.jpeg"/>
+    <meta property="og:image:width" content="5184"/>
+    <meta property="og:image:height" content="3456"/>
+
+    <!--Twitter -->
+    <meta name="twitter:title" content="Marco Russodivito - Italian Developer"/>
+    <meta name="twitter:description" content="I'm an Italian computer science student based in Campobasso. I'm into cybersecurity and backend development"/>
+    <meta name="twitter:image" content="images/horizontal/3.jpeg"/>
+    <meta name="twitter:card" content="Marco Russodivito - Italian Developer"/>
+
+    <!-- Application name -->
+    <meta name="application-name" content="Marco Russodivito - Italian Developere"/>
+    <meta name="apple-mobile-web-app-title" content="Marco Russodivito - Italian Developer"/>
+
+    <!-- Application color -->
+    <meta name="theme-color" content="#20AEEF"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#20AEEF"/>
+    <meta name="msapplication-TileColor" content="#20AEEF" />
+
+    <!-- Apple specific tag -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/typography.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+
+    <!-- Basic favicon -->
+    <link rel="icon" type="image/png" href="images/favicon/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="images/favicon/favicon-128.png" sizes="128x128"/>
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16"/>
+
+    <!-- Apple favicon -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png"/>
+
+    <!-- Microsoft favicon -->
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="images/favicon/mstile-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="images/favicon/mstile-150x150.png"/>
+    <meta name="msapplication-wide310x150logo" content="images/favicon/mstile-310x150.png"/>
+    <meta name="msapplication-square310x310logo" content="images/favicon/mstile-310x310.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X" crossorigin="anonymous"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXX-X');
+    </script>
 </head>
 <body>
     <!-- Header -->
-    <header id="header"></header>
+    <header id="header">
+        <div id="desktop-header">
+            <div id="desktop-logo"><a href="#intro">Marco Russodivito</a></div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <div id="mobile-header">
+            <div id="mobile-logo"><a href="#intro">Marco Russodivito</a></div>
+            <div id="hamburger-button">|||</div>
+            <div id="mobile-menu">
+                <div id="close-mobile-menu-button">&times;</div>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+
+    <!-- Intro -->
+    <div id="intro">
+        <div id="intro-container">
+            <h1>Hi, I'm <span>Marco Russodivito</span></h1>
+            <div id="typed-strings">
+                <h2>Backend developer</h2>
+                <h2><strong>Cybersecurity</strong> expert</h2>
+                <h2>Project manager</h2>
+            </div>
+            <h2>I'm a <span id="typed"></span></h2>
+            <a href="#about" id="discover-button">Find out who I am <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
 
     <!-- Wrapper -->
     <div id="wrapper">
-        Hi there
+        <!-- About -->
+        <section id="about" class="container">
+
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills" class="container">
+
+            CSS
+            <div class="skill css">60%</div>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="container">
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" class="container">
+            <div class="row card">
+                <div class="col-50">
+                    <form action="https://formspree.io/xgendpro" method="POST" id="contact-form">
+                        <label for="name">Your e-mail:</label>
+                        <input type="email" name="email" id="name"/>
+
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message"></textarea>
+
+                        <p id="my-form-status"></p>
+                        <button id="my-form-button">Submit</button>
+                    </form>
+                </div>
+                <div class="col-50">
+                    Facebook
+                    Instagramm
+
+                </div>
+            </div>
+        </section>
     </div>
 
+
     <!-- Footer -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+        Copyright&copy; 2020 — Marco Russodivito — All right reserved
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous"></script>
 </body>
 </html>
