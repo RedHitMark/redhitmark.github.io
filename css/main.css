@@ -8,6 +8,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
+    scroll-behavior: smooth;
 }
 
 
@@ -58,9 +59,13 @@ img {
     justify-content: space-between;
     align-items: center;
 }
-#header > #desktop-header > nav > a{
+#header > #desktop-header > nav > a {
     color: white;
     padding-left: 1em;
+}
+#header > #desktop-header > nav > a:hover,
+#header > #desktop-header > nav > a.active-view {
+    color: #2196F3;
 }
 #header > #mobile-header {
     display: none;
@@ -238,16 +243,9 @@ img {
     #wrapper > .container > .row > .col-80,
     #wrapper > .container > .row > .col-100 {
         width: 100% !important;
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
-}
-
-
-/** Card **/
-.card {
-    border-radius: 5px;
-    padding: 1em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 
@@ -255,39 +253,52 @@ img {
 #about {
 
 }
-#about .skills {
+#about #main-info {
+    display: flex;
+    flex-direction: row;
+}
+#about #main-info > #a {
+    width: 33.33%;
+    margin-right: 0.5em;
+    text-align: center;
+}
+#about #main-info > #b {
+    width: 66.66%;
+    margin-left: 0.5em;
+}
+#about #skills {
     display: flex;
     flex-direction: column;
 }
-#about .skills .skill {
+#about #skills > .skill {
     margin-bottom: 0.5em;
     display: flex;
     flex-direction: row;
     color: white;
     line-height: 30px;
 }
-#about .skills .skill .skill-name {
+#about #skills > .skill .skill-name {
     margin-bottom: 0.5em;
     background-color: #0059a0;
     width: 20%;
     padding-left: 0.5em;
 }
-#about .skills .skill .skill-bar {
+#about #skills > .skill .skill-bar {
     text-align: right;
     height: 30px;
     width: 80%;
     margin-bottom: 0.5em;
     background-color: #cde1f8;
 }
-#about .skills .skill .skill-bar .skill-bar-progress {
+#about #skills > .skill .skill-bar .skill-bar-progress {
     height: 30px;
     padding-right: 0.5em;
     background-color: #2196F3;
 }
-#about .skills .skill .skill-bar .skill-bar-progress.nodejs {
+#about #skills > .skill .skill-bar .skill-bar-progress.nodejs {
     width: 80%;
 }
-#about .skills .skill .skill-bar .skill-bar-progress.android {
+#about #skills .skill .skill-bar .skill-bar-progress.android {
     width: 60%;
 }
 
@@ -302,11 +313,31 @@ img {
 #projects {
 
 }
-
+#projects .card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+#projects .card .card-image{
+    border-radius: 5px 5px 0 0;
+}
+#projects .card .card-title{
+    border-radius: 5px 5px 0 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#projects .card .card-description{
+    border-radius: 5px 5px 0 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
 
 /** Contact **/
-#contact {
-
+#contact .card {
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 #contact-form {
     display: flex;

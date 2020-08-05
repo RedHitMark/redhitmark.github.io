@@ -26,40 +26,35 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener('scroll',  () => {
         let introSection = document.getElementById("intro");
         let aboutSection = document.getElementById("about");
-        let skillsSection = document.getElementById("career");
+        let careerSection = document.getElementById("career");
         let projectsSection = document.getElementById("projects");
-        let contactSection = document.getElementById("career");
+        let contactSection = document.getElementById("contact");
 
-        /*let p1 = document.getElementById("p1");
-        let p2 = document.getElementById("p2");
-        let p3 = document.getElementById("p3");
-        if(isInViewport(pre1)) {
-            p1.classList.add("curr-active");
-            p1.classList.add("slideRight");
+        let aboutNavLink = document.querySelector('#desktop-header nav a[href$="about"]');
+        let careerNavLink = document.querySelector('#desktop-header nav a[href$="career"]');
+        let projectsNavLink = document.querySelector('#desktop-header nav a[href$="projects"]');
+        let contactNavLink = document.querySelector('#desktop-header nav a[href$="contact"]');
 
-            p2.classList.remove("curr-active");
-            p2.classList.remove("slideRight");
-
-            p3.classList.remove("curr-active");
-            p3.classList.remove("slideRight");
-        } else if (isInViewport(pre2)) {
-            p1.classList.remove("curr-active");
-            p1.classList.remove("slideRight");
-
-            p2.classList.add("curr-active");
-            p2.classList.add("slideRight");
-
-            p3.classList.remove("curr-active");
-            p3.classList.remove("slideRight");
-        } else if (isInViewport(pre3)) {
-            p1.classList.remove("curr-active");
-            p1.classList.remove("slideRight");
-
-            p2.classList.remove("curr-active");
-            p2.classList.remove("slideRight");
-
-            p3.classList.add("curr-active");
-            p3.classList.add("slideRight");
-        }*/
+        if(isInViewport(aboutSection)) {
+            aboutNavLink.classList.add("active-view");
+            careerNavLink.classList.remove("active-view");
+            projectsNavLink.classList.remove("active-view");
+            contactNavLink.classList.remove("active-view");
+        } else if (isInViewport(careerSection)) {
+            aboutNavLink.classList.remove("active-view");
+            careerNavLink.classList.add("active-view");
+            projectsNavLink.classList.remove("active-view");
+            contactNavLink.classList.remove("active-view");
+        } else if (isInViewport(projectsSection)) {
+            aboutNavLink.classList.remove("active-view");
+            careerNavLink.classList.remove("active-view");
+            projectsNavLink.classList.add("active-view");
+            contactNavLink.classList.remove("active-view");
+        } else if (isInViewport(contactSection)) {
+            aboutNavLink.classList.remove("active-view");
+            careerNavLink.classList.remove("active-view");
+            projectsNavLink.classList.remove("active-view");
+            contactNavLink.classList.add("active-view");
+        }
     });
 });
