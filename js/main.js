@@ -1,6 +1,7 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function() {
+    /** Intro typing **/
     const typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
         typeSpeed: 100,
@@ -25,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener('scroll',  () => {
         let introSection = document.getElementById("intro");
         let aboutSection = document.getElementById("about");
-        let skillsSection = document.getElementById("skills");
+        let skillsSection = document.getElementById("career");
         let projectsSection = document.getElementById("projects");
-        let contactSection = document.getElementById("skills");
+        let contactSection = document.getElementById("career");
 
         /*let p1 = document.getElementById("p1");
         let p2 = document.getElementById("p2");

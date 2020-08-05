@@ -51,3 +51,22 @@ a {
 .text-right {
     text-align: right;
 }
+
+
+/** Section title **/
+.section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-title h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.section-title .underline {
+    width: 5em;
+    height: 0.25em;
+    background: #090909;
+}

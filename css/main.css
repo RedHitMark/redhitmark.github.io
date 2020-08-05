@@ -238,6 +238,7 @@ img {
     #wrapper > .container > .row > .col-80,
     #wrapper > .container > .row > .col-100 {
         width: 100% !important;
+        margin: 0;
     }
 }
 
@@ -254,18 +255,47 @@ img {
 #about {
 
 }
-
-
-/** Skills **/
-#skills {
-
+#about .skills {
+    display: flex;
+    flex-direction: column;
 }
-.skill {
-    text-align: right;
-    padding: 10px;
+#about .skills .skill {
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
     color: white;
+    line-height: 30px;
 }
-.css {width: 80%; background-color: #2196F3;}
+#about .skills .skill .skill-name {
+    margin-bottom: 0.5em;
+    background-color: #0059a0;
+    width: 20%;
+    padding-left: 0.5em;
+}
+#about .skills .skill .skill-bar {
+    text-align: right;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 0.5em;
+    background-color: #cde1f8;
+}
+#about .skills .skill .skill-bar .skill-bar-progress {
+    height: 30px;
+    padding-right: 0.5em;
+    background-color: #2196F3;
+}
+#about .skills .skill .skill-bar .skill-bar-progress.nodejs {
+    width: 80%;
+}
+#about .skills .skill .skill-bar .skill-bar-progress.android {
+    width: 60%;
+}
+
+
+/** Career **/
+#career {
+
+}
 
 
 /** Projects **/
