@@ -28,6 +28,7 @@ body {
 
 /** Responsive Images **/
 img {
+    width: 100%;
     max-width: 100%;
 }
 
@@ -156,9 +157,11 @@ img {
 }
 #intro > #intro-container > h1 {
     color: #fff;
+    text-align: center;
 }
 #intro > #intro-container > h2 {
     color: #fff;
+    text-align: center;
 }
 #intro > #intro-container > #discover-button {
     border: 2px solid #fff;
@@ -172,7 +175,11 @@ img {
 #intro > #intro-container > #discover-button:hover > i {
     transform: rotate(90deg);
 }
-
+@media (max-width: 800px) {
+    #intro > #intro-container {
+        width: 90%;
+    }
+}
 
 /** Wrapper **/
 #wrapper {
@@ -180,6 +187,7 @@ img {
     padding: 4em 0 0 0;
 }
 #wrapper > .container {
+    width: 70em;
     max-width: 100%;
     margin: 1em auto;
     padding: 0 2em;
@@ -234,6 +242,9 @@ img {
     #wrapper > .container > .row {
         flex-direction: column;
     }
+    #wrapper > .container > .row.reverse-mobile {
+        flex-direction: column-reverse;
+    }
     #wrapper > .container > .row > .col-20,
     #wrapper > .container > .row > .col-30,
     #wrapper > .container > .row > .col-33,
@@ -257,7 +268,7 @@ img {
     display: flex;
     flex-direction: row;
 }
-#about #main-info > #a {
+#about #main-info > #avatar-container {
     width: 33.33%;
     margin-right: 0.5em;
     text-align: center;
@@ -265,6 +276,9 @@ img {
 #about #main-info > #b {
     width: 66.66%;
     margin-left: 0.5em;
+}
+#about #bio {
+
 }
 #about #skills {
     display: flex;
@@ -298,10 +312,29 @@ img {
 #about #skills > .skill .skill-bar .skill-bar-progress.nodejs {
     width: 80%;
 }
-#about #skills .skill .skill-bar .skill-bar-progress.android {
+#about #skills .skill .skill-bar .skill-bar-progress.php {
+    width: 70%;
+}#about #skills .skill .skill-bar .skill-bar-progress.android {
     width: 60%;
 }
-
+@media (max-width: 800px) {
+    #about #bio {
+        margin-bottom: 1em;
+    }
+}
+@media (max-width: 400px) {
+    #about #main-info {
+        flex-direction: column;
+    }
+    #about #main-info > #avatar-container {
+        width: 100%;
+        margin-right: 0;
+    }
+    #about #main-info > #b {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 
 /** Career **/
 #career {
@@ -321,6 +354,9 @@ img {
 }
 #projects .card .card-image{
     border-radius: 5px 5px 0 0;
+    height: 200px;
+    object-fit: cover;
+    object-position: right;
 }
 #projects .card .card-title{
     border-radius: 5px 5px 0 0;
