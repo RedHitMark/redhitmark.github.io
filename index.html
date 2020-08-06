@@ -58,6 +58,7 @@
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="css/typography.css"/>
     <link rel="stylesheet" href="css/form.css"/>
+    <link rel="stylesheet" href="css/animations.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
 
     <!-- Basic favicon -->
@@ -132,8 +133,9 @@
                 <h2>project manager</h2>
             </div>
             <h2>I'm a <span id="typed"></span></h2>
-            <a href="#about" id="discover-button">Find out who I am <i class="fas fa-arrow-right"></i></a>
+            <a id="discover-button" href="#about" >Find out who I am</a>
         </div>
+        <a id="scroll-down-arrow" class="fade-scroll-down" href="#about" aria-label="Find out more!"></a>
     </div>
 
     <!-- Wrapper -->
@@ -147,11 +149,11 @@
 
             <div class="row reverse-mobile">
                 <div class="col-66">
-                    <div id="main-info">
+                    <div id="info">
                         <div id="avatar-container">
                             <img src="images/testimonial-2.jpg" alt=""/>
                         </div>
-                        <div id="b">
+                        <div id="basic-info">
                             <div>
                                 <strong>Name</strong>: Marco Russodivito
                             </div>
@@ -208,7 +210,6 @@
                 <li>High school: <a href="https://www.liceoscientificoromita.cb.it/">Liceo Scientifico Statale "Alberto Romita"</a></li>
                 <li>Bechelor's degree: <a href="https://www.unimol.it/">Univesità degli Studi del Molise</a></li>
             </ul>
-
         </section>
 
 
@@ -224,16 +225,28 @@
                     <img class="card-image" src="images/projects/antichi-sapori-saperi-antichi.jpg" alt=""/>
                     <h5 class="card-title">Antichi Sapori Saperi Antichi</h5>
                     <p class="card-description">Project presented to Expo2015</p>
+                    <div class="card-social-links">
+                        <a href="https://www.facebook.com/Antichi-Sapori-Saperi-Antichi-1633658463551697"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
                 <div class="col-33 card">
                     <img class="card-image" src="images/projects/pokemon.png" alt=""/>
                     <h5 class="card-title">Pokemon version Unimol</h5>
                     <p class="card-description">University project to prove my skill in Java Object Oriented Programming</p>
+                    <div class="card-social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
                 <div class="col-33 card">
                     <img class="card-image" src="images/projects/unimol.png" alt=""/>
                     <h5 class="card-title">App Studenti Unimol</h5>
                     <p class="card-description">University project to prove my skill in Web Development, software engineering and Project management</p>
+                    <div class="card-social-links">
+                        <a href="#"><i class="fab fa-google-play"></i><span class="tooltip">Download on Google Play</span></a>
+                        <a href="#"><i class="fab fa-app-store"></i></a>
+                        <a href="https://dibt.unimol.it/app/"><i class="fas fa-globe"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -241,16 +254,28 @@
                     <img class="card-image" src="images/projects/autoscroc.png" alt=""/>
                     <h5 class="card-title">Autoscrocc</h5>
                     <p class="card-description">University project to prove my skill in Android Development and backend Development</p>
+                    <div class="card-social-links">
+                        <a href="#"><i class="fab fa-github"></i><span class="tooltip">Server backend repository</span></a>
+                        <a href="#"><i class="fab fa-github"></i><span class="tooltip">Android repository</span></a>
+                    </div>
                 </div>
                 <div class="col-33 card">
                     <img class="card-image" src="images/projects/officina-dei-giornalisti.png" alt=""/>
                     <h5 class="card-title">Officina dei Giornalisti</h5>
                     <p class="card-description">Online newspaper directed by Lucrezia Cicchese</p>
+                    <div class="card-social-links">
+                        <a href="#"><i class="fas fa-globe"></i></a>
+                    </div>
                 </div>
                 <div class="col-33 card">
                     <img class="card-image" src="images/projects/2-faces.png" alt=""/>
                     <h5 class="card-title">2Faces</h5>
                     <p class="card-description">New Android malware model developed for Bachelor's Degree thesis in collaboration of Ing. Francesco Mercaldo and Dott.ssa Rosangela Casolare</p>
+                    <div class="card-social-links">
+                        <a href="#"><i class="fab fa-github"></i><span class="tooltip">Server backend repository</span></a>
+                        <a href="#"><i class="fab fa-github"></i><span class="tooltip">Control panel repository</span></a>
+                        <a href="#"><i class="fab fa-github"></i><span class="tooltip">Android repository</span></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -266,8 +291,11 @@
             <div class="row card">
                 <div class="col-50">
                     <form action="https://formspree.io/xgendpro" method="POST" id="contact-form">
-                        <label for="name">Your e-mail:</label>
-                        <input type="email" name="email" id="name"/>
+                        <label for="name">Your name:</label>
+                        <input type="text" name="text" id="name"/>
+
+                        <label for="email">Your e-mail:</label>
+                        <input type="email" name="email" id="email"/>
 
                         <label for="message">Message:</label>
                         <textarea name="message" id="message"></textarea>
@@ -277,9 +305,23 @@
                     </form>
                 </div>
                 <div class="col-50">
-                    Facebook
-                    Instagramm
-
+                    <div id="social">
+                        <div><i class="fas fa-map-marker-alt"></i>marco.russodivito</div>
+                        <div><i class="fas fa-phone-alt"></i>marco.russodivito</div>
+                        <div><i class="fas fa-envelope"></i>marco.russodivito</div>
+                        <div><i class="fab fa-facebook"></i>marco.russodivito</div>
+                        <div><i class="fab fa-facebook-f"></i>marco.russodivito</div>
+                        <div><i class="fab fa-facebook-square"></i>marco.russodivito</div>
+                        <div><i class="fab fa-instagram"></i>marco.russodivito</div>
+                        <div><i class="fab fa-instagram-square"></i>marco.russodivito</div>
+                        <div><i class="fab fa-linkedin"></i>marco.russodivito</div>
+                        <div><i class="fab fa-linkedin-in"></i>marco.russodivito</div>
+                        <div><i class="fab fa-twitter"></i>marco.russodivito</div>
+                        <div><i class="fab fa-github"></i>marco.russodivito</div>
+                        <div><i class="fab fa-github-alt"></i>marco.russodivito</div>
+                        <div><i class="fab fa-github-square"></i>marco.russodivito</div>
+                        <div><i class="fab fa-gitlab"></i>marco.russodivito</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -288,7 +330,8 @@
 
     <!-- Footer -->
     <footer id="footer">
-        Copyright&copy; 2020 — Marco Russodivito — All right reserved
+        <p>Copyright&copy; 2020 — Marco Russodivito</p>
+        <p>All right reserved</p>
     </footer>
 
 
