@@ -33,6 +33,43 @@ img {
 }
 
 
+/** Font Awesome Icons **/
+.fab, .fas {
+    font-size: 1.5em;
+    padding: 0.1em;
+}
+.fa-app-store {
+    color: #1da0f8;
+}
+.fa-google-play {
+    color: #4082EE;
+}
+.fa-globe {
+    color: #4082EE;
+}
+.fa-linkedin {
+    color: #0e76a8;
+}
+.fa-twitter {
+    color: #1da1f2;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-instagram {
+    color: white;
+    background: radial-gradient(circle at 38% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    padding: 0.1em 0.15em;
+    border-radius: 8px;
+}
+.fa-github {
+    color: #313030;
+}
+.fa-gitlab {
+    color: #f59f25;
+}
+
+
 /** Header **/
 #header {
     width: 100%;
@@ -357,15 +394,58 @@ img {
 #career {
 
 }
-#career ul{
-    margin-left: 1em;
+#career .formation {
+    background: gray;
+    margin-bottom: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    border-radius: 5px;
 }
+#career .formation > .formation-icon {
+    width: 10%;
+    align-self: center;
+    text-align: center;
+    font-size: 2.5em;
+}
+#career .formation > .formation-info {
+    width: 80%;
+    text-align: left;
+}
+#career .formation > .formation-logo {
+    width: 10%;
+    align-self: center;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    #career .formation > .formation-icon {
+        width: 50%;
+        order: 0;
+    }
+    #career .formation > .formation-info {
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+    #career .formation > .formation-logo {
+        width: 50%;
+        order: 1;
+    }
+    #career .formation > .formation-logo > img{
+        max-width: 4.5em;
+    }
+}
+
 
 /** Projects **/
 #projects {
 
 }
 #projects .card {
+    display: flex;
+    flex-direction: column;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-bottom: 2em;
@@ -384,13 +464,14 @@ img {
     padding-right: 1em;
 }
 #projects .card > .card-description {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-bottom: 0.5em;
 }
 #projects .card > .card-social-links {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -437,6 +518,7 @@ img {
     opacity: 1;
 }
 
+
 /** Contact **/
 #contact .card {
     border-radius: 5px;
@@ -444,48 +526,49 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background: #fff;
 }
-#contact #contact-form {
+#contact .card #contact-form {
     display: flex;
     flex-direction: column;
 }
-#contact #contact-form > #contact-form-title{
+#contact .card #contact-form > #contact-form-title{
     margin-top: 0;
     margin-bottom: 0.5em;
 }
-#contact #contact-info,
-#contact #social{
+#contact .card #contact-info,
+#contact .card #social-info {
     display: flex;
     flex-direction: column;
 }
-#contact #contact-info > h3,
-#contact #social > h3 {
+#contact .card #contact-info > h3,
+#contact .card #social-info > h3 {
     margin-top: 0;
     margin-bottom: 0.5em;
 }
-#contact #contact-info > #info-list{
+#contact .card #contact-info > #info-list{
     margin-bottom: 0.7em;
 }
-#contact #contact-info > #info-list,
-#contact #social > #social-list {
+#contact .card #contact-info > #info-list,
+#contact .card #social-info > #social-list {
     list-style: none;
 }
-#contact #contact-info > #info-list > li,
-#contact #social > #social-list > li {
+#contact .card #contact-info > #info-list > li,
+#contact .card #social-info > #social-list > li {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 0.25em;
 }
-#contact #contact-info > #info-list > li > .list-item-icon,
-#contact #social > #social-list > li > .list-item-icon {
+#contact .card #contact-info > #info-list > li > .list-item-icon,
+#contact .card #social-info > #social-list > li > .list-item-icon {
     margin-right: 0.5em;
 }
 @media (max-width: 800px) {
-    #contact #contact-form {
+    #contact .card #contact-form {
         margin-bottom: 0.7em;
     }
 }
+
 
 /** Footer **/
 #footer {
@@ -494,41 +577,4 @@ img {
     padding-bottom: 1em;
     background: #090909;
     color: #f1f1f1;
-}
-
-
-/** Icons **/
-.fab, .fas {
-    font-size: 1.5em;
-    padding: 0.1em;
-}
-.fa-app-store {
-    color: #1da0f8;
-}
-.fa-google-play {
-    color: #4082EE;
-}
-.fa-globe {
-    color: #4082EE;
-}
-.fa-linkedin {
-    color: #0e76a8;
-}
-.fa-twitter {
-    color: #1da1f2;
-}
-.fa-facebook {
-    color: #3b5998;
-}
-.fa-instagram {
-    color: white;
-    background: radial-gradient(circle at 38% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    padding: 0.1em 0.15em;
-    border-radius: 8px;
-}
-.fa-github {
-    color: #313030;
-}
-.fa-gitlab {
-    color: #f59f25;
 }
