@@ -20,11 +20,12 @@ textarea {
     color: #121212;
     display: block;
     outline: 0;
-    padding: 0 1em;
+    padding: 0.5em;
     text-decoration: none;
     width: 100%;
     min-height: 2.2em;
     margin-bottom: 0.5em;
+    resize: none;
 }
 
 

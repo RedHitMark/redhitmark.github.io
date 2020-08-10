@@ -28,11 +28,11 @@
     <meta property="og:description" content="I'm an Italian computer science student based in Campobasso. I'm into cybersecurity and backend development"/>
     <meta property="og:url" content="https://redhitmark.github.io"/>
     <meta property="og:site_name" content="Marco Russodivito"/>
-    <meta property="og:updated_time" content="2020-06-06T21:43:20+02:00"/>
-    <meta property="og:image" content="images/horizontal/3.jpeg"/>
-    <meta property="og:image:secure_url" content="https://redhitmark.github.io/images/horizontal/3.jpeg"/>
-    <meta property="og:image:width" content="5184"/>
-    <meta property="og:image:height" content="3456"/>
+    <meta property="og:updated_time" content="2020-08-10T21:43:20+02:00"/>
+    <meta property="og:image" content="images/marco-russodivito.jpg"/>
+    <meta property="og:image:secure_url" content="https://redhitmark.github.io/images/marco-russodivito.jpg"/>
+    <meta property="og:image:width" content="1063"/>
+    <meta property="og:image:height" content="1063"/>
 
     <!--Twitter -->
     <meta name="twitter:title" content="Marco Russodivito - Italian Developer"/>
@@ -151,7 +151,7 @@
                 <div class="col-66">
                     <div id="info">
                         <div id="avatar-container">
-                            <img src="images/testimonial-2.jpg" alt=""/>
+                            <img src="images/marco-russodivito.jpg" alt="Marco Russodivito picture"/>
                         </div>
                         <div id="basic-info">
                             <div>
@@ -226,7 +226,7 @@
                     <h5 class="card-title">Antichi Sapori Saperi Antichi</h5>
                     <p class="card-description">Project presented to Expo2015</p>
                     <div class="card-social-links">
-                        <a href="https://www.facebook.com/Antichi-Sapori-Saperi-Antichi-1633658463551697"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/Antichi-Sapori-Saperi-Antichi-1633658463551697"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
@@ -291,6 +291,8 @@
             <div class="row card">
                 <div class="col-50">
                     <form action="https://formspree.io/xgendpro" method="POST" id="contact-form">
+                        <h3 id="contact-form-title">Send me a message</h3>
+
                         <label for="name">Your name:</label>
                         <input type="text" name="text" id="name"/>
 
@@ -298,29 +300,62 @@
                         <input type="email" name="email" id="email"/>
 
                         <label for="message">Message:</label>
-                        <textarea name="message" id="message"></textarea>
+                        <textarea name="message" id="message" rows="5"></textarea>
 
                         <p id="my-form-status"></p>
                         <button id="my-form-button">Submit</button>
                     </form>
                 </div>
                 <div class="col-50">
+                    <div id="contact-info">
+                        <h3>Contact Info</h3>
+                        <ul id="info-list">
+                            <li>
+                                <div class="list-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="list-item-content">Via Emilia, 21<br>86100 Campobasso (CB)</div>
+                            </li>
+                            <li>
+                                <div class="list-item-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="list-item-content"><a href="tel:+393881663571">+39 388 155 3571</a></div>
+                            </li>
+                            <li>
+                                <div class="list-item-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="list-item-content"><a href="mailto:marco.russodivito@gmail.com">marco.russodivito@gmail.com</a></div>
+                            </li>
+                            <li>
+                                <div class="list-item-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="list-item-content"><a href="mailto:m.russodivito@studenti.unimol.it">m.russodivito@studenti.unimol.it</a></div>
+                            </li>
+                        </ul>
+                    </div>
                     <div id="social">
-                        <div><i class="fas fa-map-marker-alt"></i>marco.russodivito</div>
-                        <div><i class="fas fa-phone-alt"></i>marco.russodivito</div>
-                        <div><i class="fas fa-envelope"></i>marco.russodivito</div>
-                        <div><i class="fab fa-facebook"></i>marco.russodivito</div>
-                        <div><i class="fab fa-facebook-f"></i>marco.russodivito</div>
-                        <div><i class="fab fa-facebook-square"></i>marco.russodivito</div>
-                        <div><i class="fab fa-instagram"></i>marco.russodivito</div>
-                        <div><i class="fab fa-instagram-square"></i>marco.russodivito</div>
-                        <div><i class="fab fa-linkedin"></i>marco.russodivito</div>
-                        <div><i class="fab fa-linkedin-in"></i>marco.russodivito</div>
-                        <div><i class="fab fa-twitter"></i>marco.russodivito</div>
-                        <div><i class="fab fa-github"></i>marco.russodivito</div>
-                        <div><i class="fab fa-github-alt"></i>marco.russodivito</div>
-                        <div><i class="fab fa-github-square"></i>marco.russodivito</div>
-                        <div><i class="fab fa-gitlab"></i>marco.russodivito</div>
+                        <h3>Social</h3>
+                        <ul id="social-list">
+                            <li>
+                                <div class="list-item-icon"><i class="fab fa-facebook"></i></div>
+                                <div class="list-item-content"><a href="https://www.facebook.com/marco.russodivito/">Marco Russodivito</a></div>
+                            </li>
+                            <li>
+                                <div class="list-item-icon"><i class="fab fa-instagram"></i></div>
+                                <div class="list-item-content"><a href="https://www.instagram.com/marco.russodivito">marco.russodivito</a></div>
+                            </li>
+                            <li>
+                                <div class="list-item-icon"><i class="fab fa-linkedin"></i></div>
+                                <div class="list-item-content"><a href="https://www.linkedin.com/in/marco-russodivito-918459174/">Marco Russodivito</a></div>
+                            </li>
+                            <li>
+                                <div class="list-item-icon"><i class="fab fa-twitter"></i></div>
+                                <div class="list-item-content"><a href="https://twitter.com/RedHitMark98">@RedHitMark98</a></div>
+                            </li>
+                            <li>
+                                <div class="list-item-icon"><i class="fab fa-github"></i></div>
+                                <div class="list-item-content"><a href="https://github.com/RedHitMark">RedHitMark</a></div>
+                            </li>
+                            <li>
+                                <div class="list-item-icon"><i class="fab fa-gitlab"></i></div>
+                                <div class="list-item-content"><a href="https://gitlab.com/RedHitMark">RedHitMark</a></div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

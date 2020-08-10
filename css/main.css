@@ -155,6 +155,9 @@ img {
     justify-content: center;
     align-items: center;
 }
+#intro > #intro-container > #typed-strings {
+    display: none;
+}
 #intro > #intro-container > h1 {
     color: #fff;
     text-align: center;
@@ -191,6 +194,7 @@ img {
         width: 90%;
     }
 }
+
 
 /** Wrapper **/
 #wrapper {
@@ -334,15 +338,15 @@ img {
         margin-bottom: 1em;
     }
 }
-@media (max-width: 400px) {
-    #about #basic-info {
+@media (max-width: 420px) {
+    #about #info {
         flex-direction: column;
     }
-    #about #basic-info > #avatar-container {
+    #about #info > #avatar-container {
         width: 100%;
         margin-right: 0;
     }
-    #about #basic-info > #basic-info {
+    #about #info > #basic-info {
         width: 100%;
         margin-left: 0;
     }
@@ -353,7 +357,9 @@ img {
 #career {
 
 }
-
+#career ul{
+    margin-left: 1em;
+}
 
 /** Projects **/
 #projects {
@@ -362,15 +368,15 @@ img {
 #projects .card {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     padding-bottom: 1em;
     background: #fff;
 }
 #projects .card > .card-image {
     border-radius: 5px 5px 0 0;
     height: 200px;
-    object-fit: cover;
-    object-position: right;
+    object-fit: contain;
+    object-position: center;
     overflow: hidden;
 }
 #projects .card > .card-title {
@@ -416,7 +422,6 @@ img {
     opacity: 0;
     transition: opacity 0.3s;
 }
-/* Tooltip arrow */
 #projects .card > .card-social-links > a .tooltip::after {
     content: "";
     position: absolute;
@@ -427,8 +432,6 @@ img {
     border-style: solid;
     border-color: transparent transparent #555 transparent;
 }
-
-/* Show the tooltip text when you mouse over the tooltip container */
 #projects .card > .card-social-links > a:hover .tooltip {
     visibility: visible;
     opacity: 1;
@@ -437,18 +440,52 @@ img {
 /** Contact **/
 #contact .card {
     border-radius: 5px;
-    padding: 1em;
+    padding: 2em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: #fff;
 }
 #contact #contact-form {
     display: flex;
     flex-direction: column;
 }
-#contact #social {
+#contact #contact-form > #contact-form-title{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+#contact #contact-info,
+#contact #social{
     display: flex;
     flex-direction: column;
 }
-
+#contact #contact-info > h3,
+#contact #social > h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+#contact #contact-info > #info-list{
+    margin-bottom: 0.7em;
+}
+#contact #contact-info > #info-list,
+#contact #social > #social-list {
+    list-style: none;
+}
+#contact #contact-info > #info-list > li,
+#contact #social > #social-list > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.25em;
+}
+#contact #contact-info > #info-list > li > .list-item-icon,
+#contact #social > #social-list > li > .list-item-icon {
+    margin-right: 0.5em;
+}
+@media (max-width: 800px) {
+    #contact #contact-form {
+        margin-bottom: 0.7em;
+    }
+}
 
 /** Footer **/
 #footer {
@@ -457,4 +494,41 @@ img {
     padding-bottom: 1em;
     background: #090909;
     color: #f1f1f1;
+}
+
+
+/** Icons **/
+.fab, .fas {
+    font-size: 1.5em;
+    padding: 0.1em;
+}
+.fa-app-store {
+    color: #1da0f8;
+}
+.fa-google-play {
+    color: #4082EE;
+}
+.fa-globe {
+    color: #4082EE;
+}
+.fa-linkedin {
+    color: #0e76a8;
+}
+.fa-twitter {
+    color: #1da1f2;
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-instagram {
+    color: white;
+    background: radial-gradient(circle at 38% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    padding: 0.1em 0.15em;
+    border-radius: 8px;
+}
+.fa-github {
+    color: #313030;
+}
+.fa-gitlab {
+    color: #f59f25;
 }
