@@ -23,6 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     }
 
+    let cookieConsentButton = document.getElementById("cookie-consent-button");
+    let cookieConsentBar = document.getElementById("cookie-consent-bar");
+    cookieConsentButton.addEventListener("click", (event) => {
+       cookieConsentBar.style.display = "none";
+    });
+
     document.addEventListener('scroll',  () => {
         let introSection = document.getElementById("intro");
         let aboutSection = document.getElementById("about");

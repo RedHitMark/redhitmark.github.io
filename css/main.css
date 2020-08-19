@@ -570,7 +570,7 @@ img {
 
 
 /** Cookie consent **/
-#cookie-consent {
+#cookie-consent-bar {
     position: fixed;
     bottom: 0;
     z-index: 1000;
@@ -584,14 +584,14 @@ img {
     padding: 1em;
     background-color: #000;
 }
-#cookie-consent > #cookie-consent-message {
+#cookie-consent-bar > #cookie-consent-message {
     color: #fff;
 }
-#cookie-consent > #cookie-consent-message > a{
+#cookie-consent-bar > #cookie-consent-message > a{
     color: #fff;
     text-decoration: #fff solid underline;
 }
-#cookie-consent > #cookie-consent-button {
+#cookie-consent-bar > #cookie-consent-button {
     cursor: pointer;
     padding: .2em 1em;
     margin-left: 1em;
@@ -601,10 +601,10 @@ img {
     border-radius: .4rem;
 }
 @media (max-width: 800px) {
-    #cookie-consent > #cookie-consent-message {
+    #cookie-consent-bar > #cookie-consent-message {
         width: 100%;
     }
-    #cookie-consent > #cookie-consent-button {
+    #cookie-consent-bar > #cookie-consent-button {
         margin-left: 0;
         margin-top: 0.5em;
     }
