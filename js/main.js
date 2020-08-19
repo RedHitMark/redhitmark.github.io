@@ -1,8 +1,38 @@
 "use strict";
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+function setCookie(name, value, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
 
-document.addEventListener("DOMContentLoaded", function() {
+    const expires = "expires="+ d.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+function getCookie(name) {
+    const cookieString = decodeURIComponent(document.cookie);
+    const cookies = cookieString.split('; ');
+
+    let i = 0;
+    while (i < cookies.length && !cookies[i].startsWith(name+'=')) {
+        i++;
+    }
+
+    if(i < cookies.length) {
+        return cookies[i].substr(name.length+1);
+    } else {
+        return '';
+    }
+}
+document.addEventListener("DOMContentLoaded", () => {
     /** Intro typing **/
-    const typed = new Typed('#typed', {
+    new Typed('#typed', {
         stringsElement: '#typed-strings',
         typeSpeed: 100,
         startDelay: 1000,
@@ -13,24 +43,23 @@ document.addEventListener("DOMContentLoaded", function() {
         loop: true,
     });
 
-    function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
+    /** Cookie consent **/
+    const cookieConsentBar = document.getElementById("cookie-consent-bar");
+
+    const cookieAgreeContent = getCookie('cookieAgree');
+
+    if (cookieAgreeContent === "yes") {
+        cookieConsentBar.style.display = "none";
+    } else {
+        const cookieConsentButton = document.getElementById("cookie-consent-button");
+        cookieConsentButton.addEventListener("click", () => {
+            cookieConsentBar.style.display = "none";
+            setCookie('cookieAgree', 'yes', 30);
+        });
     }
 
-    let cookieConsentButton = document.getElementById("cookie-consent-button");
-    let cookieConsentBar = document.getElementById("cookie-consent-bar");
-    cookieConsentButton.addEventListener("click", (event) => {
-       cookieConsentBar.style.display = "none";
-    });
-
     document.addEventListener('scroll',  () => {
-        let introSection = document.getElementById("intro");
+        //let introSection = document.getElementById("intro");
         let aboutSection = document.getElementById("about");
         let careerSection = document.getElementById("career");
         let projectsSection = document.getElementById("projects");
