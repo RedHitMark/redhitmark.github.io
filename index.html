@@ -59,7 +59,7 @@
     <link rel="stylesheet" href="css/typography.css"/>
     <link rel="stylesheet" href="css/form.css"/>
     <link rel="stylesheet" href="css/animations.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
     <!-- Basic favicon -->
     <link rel="icon" type="image/png" href="images/favicon/favicon-196x196.png" sizes="196x196"/>
@@ -89,10 +89,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174563331-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag(){
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
-
-        gtag('config', 'UA-174563331-1');
+        gtag('config', 'UA-174563331-1', {'anonymize_ip': true} );
     </script>
 </head>
 <body>
@@ -134,8 +135,9 @@
             </div>
             <h2>I'm a <span id="typed"></span></h2>
             <a id="discover-button" href="#about" >Find out who I am</a>
+
+            <a id="scroll-down-arrow" class="fade-scroll-down" href="#about" aria-label="Find out more!"></a>
         </div>
-        <a id="scroll-down-arrow" class="fade-scroll-down" href="#about" aria-label="Find out more!"></a>
     </div>
 
     <!-- Wrapper -->
@@ -170,6 +172,12 @@
                     </div>
                     <div id="skills">
                         <h3>My skills:</h3>
+                        <div class="skill">
+                            <div class="skill-name">Object orientation</div>
+                            <div class="skill-bar">
+                                <div class="skill-bar-progress nodejs">80%</div>
+                            </div>
+                        </div>
                         <div class="skill">
                             <div class="skill-name">Node.js</div>
                             <div class="skill-bar">
@@ -404,6 +412,11 @@
         </section>
     </div>
 
+    <!-- Cookie consent -->
+    <div id="cookie-consent" role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc">
+        <p id="cookie-consent-message">My website uses cookies to make your browsing experience better. By using my site you agree to our use of cookies. <a aria-label="learn more about cookies" role="button"href="https://cookiesandyou.com" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></p>
+        <button id="cookie-consent-button" aria-label="dismiss cookie message" role="button">Got it!</button>
+    </div>
 
     <!-- Footer -->
     <footer id="footer">
