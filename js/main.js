@@ -43,21 +43,28 @@ document.addEventListener("DOMContentLoaded", () => {
         loop: true,
     });
 
+
     /** Cookie consent **/
     const cookieConsentBar = document.getElementById("cookie-consent-bar");
 
     const cookieAgreeContent = getCookie('cookieAgree');
 
+    const footer = document.getElementById("footer")
+
     if (cookieAgreeContent === "yes") {
         cookieConsentBar.style.display = "none";
+        footer.classList.remove("banner-visible")
     } else {
         const cookieConsentButton = document.getElementById("cookie-consent-button");
         cookieConsentButton.addEventListener("click", () => {
             cookieConsentBar.style.display = "none";
+            footer.classList.remove("banner-visible")
             setCookie('cookieAgree', 'yes', 30);
         });
     }
 
+
+    /** Scroll event handler **/
     document.addEventListener('scroll',  () => {
         //let introSection = document.getElementById("intro");
         let aboutSection = document.getElementById("about");
