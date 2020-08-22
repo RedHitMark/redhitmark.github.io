@@ -331,8 +331,8 @@ img {
 
 }
 #about #skills {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
 }
 #about #skills > .skill {
     margin-bottom: 0.5em;
@@ -387,6 +387,41 @@ img {
     }
 }
 
+.skill-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.chip {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-right: 15px;
+    margin-right: 1em;
+    margin-bottom: 0.3em;
+    border-radius: 25px;
+    background-color: #d2d2d2;
+}
+.chip:last-child {
+    margin-right: 0;
+}
+.chip > .skill-name {
+    display: table-cell;
+    vertical-align:middle;
+}
+.chip > i {
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 0.6em;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    width: 2.4em;
+    height: 2.4em;
+    text-align: center;
+    background: #1da0f8;
+}
 
 /** Career **/
 #career {
