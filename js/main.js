@@ -46,9 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /** Cookie consent **/
     const cookieConsentBar = document.getElementById("cookie-consent-bar");
-
     const cookieAgreeContent = getCookie('cookieAgree');
-
     const footer = document.getElementById("footer")
 
     if (cookieAgreeContent === "yes") {
@@ -65,38 +63,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /** Scroll event handler **/
-    document.addEventListener('scroll',  () => {
-        //let introSection = document.getElementById("intro");
-        let aboutSection = document.getElementById("about");
-        let careerSection = document.getElementById("career");
-        let projectsSection = document.getElementById("projects");
-        let contactSection = document.getElementById("contact");
+    let aboutSection = document.getElementById("about");
+    let skillsSection = document.getElementById("skills");
+    let careerSection = document.getElementById("career");
+    let projectsSection = document.getElementById("projects");
+    let contactSection = document.getElementById("contact");
 
-        let aboutNavLink = document.querySelector('#desktop-header nav a[href$="about"]');
-        let careerNavLink = document.querySelector('#desktop-header nav a[href$="career"]');
-        let projectsNavLink = document.querySelector('#desktop-header nav a[href$="projects"]');
-        let contactNavLink = document.querySelector('#desktop-header nav a[href$="contact"]');
+    let aboutNavLink = document.querySelector('#desktop-header > nav > a[href$="about"]');
+    let skillsNavLink = document.querySelector('#desktop-header > nav > a[href$="skills"]');
+    let careerNavLink = document.querySelector('#desktop-header > nav > a[href$="career"]');
+    let projectsNavLink = document.querySelector('#desktop-header > nav > a[href$="projects"]');
+    let contactNavLink = document.querySelector('#desktop-header > nav > a[href$="contact"]');
 
-        if(isInViewport(aboutSection)) {
+    async function checkVisibleElement() {
+
+        if (isInViewport(aboutSection)) {
             aboutNavLink.classList.add("active-view");
+            skillsNavLink.classList.remove("active-view");
             careerNavLink.classList.remove("active-view");
             projectsNavLink.classList.remove("active-view");
             contactNavLink.classList.remove("active-view");
+            //console.log(1);
+        } else if (isInViewport(skillsSection)) {
+            aboutNavLink.classList.remove("active-view");
+            skillsNavLink.classList.add("active-view");
+            careerNavLink.classList.remove("active-view");
+            projectsNavLink.classList.remove("active-view");
+            contactNavLink.classList.remove("active-view");
+            //console.log(2);
         } else if (isInViewport(careerSection)) {
             aboutNavLink.classList.remove("active-view");
+            skillsNavLink.classList.remove("active-view");
             careerNavLink.classList.add("active-view");
             projectsNavLink.classList.remove("active-view");
             contactNavLink.classList.remove("active-view");
+            //console.log(3);
         } else if (isInViewport(projectsSection)) {
             aboutNavLink.classList.remove("active-view");
+            skillsNavLink.classList.remove("active-view");
             careerNavLink.classList.remove("active-view");
             projectsNavLink.classList.add("active-view");
             contactNavLink.classList.remove("active-view");
+            //console.log(4);
         } else if (isInViewport(contactSection)) {
             aboutNavLink.classList.remove("active-view");
+            skillsNavLink.classList.remove("active-view");
             careerNavLink.classList.remove("active-view");
             projectsNavLink.classList.remove("active-view");
             contactNavLink.classList.add("active-view");
+            //console.log(5);
         }
-    });
+    }
+    checkVisibleElement()
+    document.addEventListener('scroll',  checkVisibleElement);
 });

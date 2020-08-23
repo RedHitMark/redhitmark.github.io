@@ -1,0 +1,22 @@
+{
+  "short_name": "redhitmark",
+  "name": "Marco Russodivito",
+  "description": "I'm an Italian computer science student based in Campobasso. I'm into cybersecurity and backend development",
+  "icons": [
+    {
+      "src": "/favicon-196x196.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6",
+}

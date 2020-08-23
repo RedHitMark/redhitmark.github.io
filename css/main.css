@@ -169,7 +169,7 @@ img {
 
 /** Intro **/
 #intro {
-    background-image: url("../images/technology-785742_1920.jpg");
+    background-image: url("../images/intro-background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -330,44 +330,6 @@ img {
 #about #bio {
 
 }
-#about #skills {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-}
-#about #skills > .skill {
-    margin-bottom: 0.5em;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    line-height: 30px;
-}
-#about #skills > .skill > .skill-name {
-    margin-bottom: 0.5em;
-    background-color: #0059a0;
-    width: 20%;
-    padding-left: 0.5em;
-}
-#about #skills > .skill > .skill-bar {
-    text-align: right;
-    height: 30px;
-    width: 80%;
-    margin-bottom: 0.5em;
-    background-color: #cde1f8;
-}
-#about #skills > .skill > .skill-bar > .skill-bar-progress {
-    height: 30px;
-    padding-right: 0.5em;
-    background-color: #2196F3;
-}
-#about #skills > .skill > .skill-bar > .skill-bar-progress.nodejs {
-    width: 80%;
-}
-#about #skills > .skill > .skill-bar > .skill-bar-progress.php {
-    width: 70%;
-}
-#about #skills > .skill > .skill-bar > .skill-bar-progress.android {
-    width: 60%;
-}
 @media (max-width: 800px) {
     #about #bio {
         margin-bottom: 1em;
@@ -387,12 +349,17 @@ img {
     }
 }
 
-.skill-group {
+
+/** Skills **/
+#skills {
+
+}
+#skills > .skill-group {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.chip {
+#skills > .skill-group > .chip {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -403,14 +370,14 @@ img {
     border-radius: 25px;
     background-color: #d2d2d2;
 }
-.chip:last-child {
+#skills > .skill-group > .chip:last-child {
     margin-right: 0;
 }
-.chip > .skill-name {
+#skills > .skill-group > .chip > .skill-name {
     display: table-cell;
     vertical-align:middle;
 }
-.chip > i {
+#skills > .skill-group > .chip > i {
     float: left;
     margin-right: 10px;
     border-radius: 50%;
@@ -428,27 +395,26 @@ img {
 
 }
 #career .formation {
-    background: gray;
+    background: #d1d1d1;
     margin-bottom: 1em;
     padding: 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    color: white;
     border-radius: 5px;
 }
 #career .formation > .formation-icon {
-    width: 12%;
+    width: 15%;
     align-self: center;
     text-align: center;
     font-size: 2.5em;
 }
 #career .formation > .formation-info {
-    width: 78%;
+    width: 70%;
     text-align: left;
 }
 #career .formation > .formation-logo {
-    width: 10%;
+    width: 15%;
     align-self: center;
     text-align: center;
 }
@@ -456,6 +422,7 @@ img {
     #career .formation > .formation-icon {
         width: 50%;
         order: 0;
+        font-size: 3.2em;
     }
     #career .formation > .formation-info {
         width: 100%;
@@ -467,7 +434,7 @@ img {
         order: 1;
     }
     #career .formation > .formation-logo > img{
-        max-width: 4.5em;
+        max-width: 5.5em;
     }
 }
 
