@@ -1,80 +1,81 @@
 {
     "name": "Marco Russodivito",
-    "short_name": "redhitmark",
+    "short_name": "Marco Russodivito",
+    "start_url": "https://redhitmark.github.io/index.html",
+    "display": "standalone",
+    "lang":"en-US",
+    "background_color": "#3367D6",
+    "theme_color": "#3367D6",
     "description": "I'm an Italian computer science student based in Campobasso. I'm into cybersecurity and backend development",
     "icons": [
         {
-            "src": "/images/favicon/favicon-16x16.png",
+            "src": "https://redhitmark.github.io/images/favicon/favicon-16x16.png",
             "sizes": "16x16",
             "type": "image/png"
         },{
-            "src": "/images/favicon/favicon-32x32.png",
+            "src": "https://redhitmark.github.io/images/favicon/favicon-32x32.png",
             "sizes": "32x32",
             "type": "image/png"
         },{
-            "src": "/images/favicon/apple-touch-icon-57x57.png",
+            "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-57x57.png",
             "sizes": "57x57",
             "type": "image/png"
         },{
-            "src": "/images/favicon/apple-touch-icon-60x60.png",
+            "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-60x60.png",
             "sizes": "60x60",
             "type": "image/png"
         },{
-            "src": "/images/favicon/mstile-70x70.png",
+            "src": "https://redhitmark.github.io/images/favicon/mstile-70x70.png",
             "sizes": "70x70",
             "type": "image/png"
         },{
-            "src": "/images/favicon/apple-touch-icon-72x72.png",
+            "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-72x72.png",
             "sizes": "72x72",
             "type": "image/png"
         },{
-            "src": "/images/favicon/apple-touch-icon-76x76.png",
+            "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-76x76.png",
             "sizes": "76x76",
             "type": "image/png"
         },{
-            "src": "/images/favicon/favicon-96x96.png",
+            "src": "https://redhitmark.github.io/images/favicon/favicon-96x96.png",
             "sizes": "96x96",
             "type": "image/png"
         },{
-            "src": "/images/favicon/apple-touch-icon-114x114.png",
+            "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-114x114.png",
             "sizes": "114x114",
             "type": "image/png"
         },{
-            "src": "/images/favicon/apple-touch-icon-120x120.png",
+            "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-120x120.png",
             "sizes": "120x120",
             "type": "image/png"
         },{
-            "src": "/images/favicon/favicon-128x128.png",
+            "src": "https://redhitmark.github.io/images/favicon/favicon-128x128.png",
             "sizes": "128x128",
             "type": "image/png"
         },{
-            "src": "/images/favicon/apple-touch-icon-144x144.png",
+            "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },{
-            "src": "/images/favicon/mstile-150x150.png",
+            "src": "https://redhitmark.github.io/images/favicon/mstile-150x150.png",
             "sizes": "150x150",
             "type": "image/png"
         },{
-            "src": "/images/favicon/apple-touch-icon-152x152.png",
+            "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-152x152.png",
             "sizes": "152x152",
             "type": "image/png"
         },{
-            "src": "/images/favicon/favicon-196x196.png",
+            "src": "https://redhitmark.github.io/images/favicon/favicon-196x196.png",
             "sizes": "196x196",
             "type": "image/png"
         },{
-            "src": "/images/favicon/mstile-310x310.png",
+            "src": "https://redhitmark.github.io/images/favicon/mstile-310x310.png",
             "sizes": "310x310",
             "type": "image/png"
         },{
-            "src": "/images/favicon/favicon.png",
+            "src": "https://redhitmark.github.io/images/favicon/favicon.png",
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "start_url": "/index.html",
-    "background_color": "#3367D6",
-    "display": "standalone",
-    "theme_color": "#3367D6"
+    ]
 }

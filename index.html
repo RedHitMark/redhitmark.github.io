@@ -129,6 +129,13 @@
     <link rel="stylesheet" href="css/typography.css"/>
     <link rel="stylesheet" href="css/animations.css"/>
 
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174563331-1"></script>
     <script>
