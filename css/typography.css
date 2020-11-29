@@ -2,8 +2,8 @@
 body, input, select, textarea {
     font-family: "Roboto Light", "Segoe UI", Arial, Helvetica, sans-serif;
     color: #555555;
-    font-size: calc(12px + 0.35vw); /* Responsive base font size */
-    line-height: calc(12px + 1.05vw); /* Responsive Vertical Rhythm */
+    font-size: calc(14px + 0.35vw); /* Responsive base font size */
+    line-height: calc(14px + 1.05vw); /* Responsive Vertical Rhythm */
 }
 h1 {
     font-size: 1.912em;
