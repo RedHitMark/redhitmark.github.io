@@ -7,8 +7,8 @@
   "lang": "English",
   "background_color": "#121212",
   "theme_color": "#121212",
+  "scope": "https://redhitmark.github.io",
   "start_url": "https://redhitmark.github.io/index.html",
-  "scope": "web developement",
   "icons": [
     {
       "src": "https://redhitmark.github.io/images/favicon/favicon-16x16.png",

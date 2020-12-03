@@ -31,6 +31,14 @@ function getCookie(name) {
     }
 }
 document.addEventListener("DOMContentLoaded", () => {
+    /** Lazy Loading **/
+    const observer = lozad('.lazy', {
+        rootMargin: '100px 0px',
+        threshold: 0.1,
+        enableAutoReload: true
+    });
+    observer.observe();
+
     /** Intro typing **/
     new Typed('#typed', {
         stringsElement: '#typed-strings',
