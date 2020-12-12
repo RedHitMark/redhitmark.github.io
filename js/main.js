@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let projectsNavLink = document.querySelector('#desktop-header > nav > a[href$="projects"]');
     let contactNavLink = document.querySelector('#desktop-header > nav > a[href$="contact"]');
 
-    async function checkVisibleElement() {
+    function checkVisibleElement() {
 
         if (isInViewport(aboutSection)) {
             aboutNavLink.classList.add("active-view");

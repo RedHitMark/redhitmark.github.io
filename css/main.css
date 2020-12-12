@@ -325,7 +325,7 @@
     background: #fff;
 }
 #projects .card > .card-image {
-    border-radius: 5px 5px 0 0;
+    padding: 5px;
     height: 200px;
     object-fit: contain;
     object-position: center;
