@@ -31,14 +31,6 @@ function getCookie(name) {
     }
 }
 document.addEventListener("DOMContentLoaded", () => {
-    /** Lazy Loading **/
-    const observer = lozad('.lazy', {
-        rootMargin: '100px 0px',
-        threshold: 0.1,
-        enableAutoReload: true
-    });
-    observer.observe();
-
     /** Intro typing **/
     new Typed('#typed', {
         stringsElement: '#typed-strings',
@@ -124,4 +116,38 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     checkVisibleElement()
     document.addEventListener('scroll',  checkVisibleElement);
+
+
+    /** Form Script **/
+    let form = document.getElementById("contact-form");
+    let button = document.getElementById("my-form-button");
+    let status = document.getElementById("my-form-status");
+
+    function success() {
+        form.reset();
+        button.style = "display: none ";
+        status.innerHTML = "Thanks!";
+    }
+
+    function error() {
+        status.innerHTML = "Oops! There was a problem.";
+    }
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        let data = new FormData(form);
+
+        let xhr = new XMLHttpRequest();
+        xhr.open(form.method, form.action);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    });
 });
