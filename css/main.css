@@ -22,7 +22,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /** Body **/
 body {
     background-color: #f1f1f1;
+    overflow: overlay;
 }
+
+
+/** Custom Scroll Bar**/
+::-webkit-scrollbar {
+     width: 13px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #121212;
+}
+
 
 
 /** Responsive Images **/
