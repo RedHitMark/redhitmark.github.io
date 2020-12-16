@@ -30,7 +30,7 @@ function getCookie(name) {
         return '';
     }
 }
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     /** Intro typing **/
     new Typed('#typed', {
         stringsElement: '#typed-strings',
@@ -74,45 +74,51 @@ document.addEventListener("DOMContentLoaded", () => {
     let careerNavLink = document.querySelector('#desktop-header > nav > a[href$="career"]');
     let projectsNavLink = document.querySelector('#desktop-header > nav > a[href$="projects"]');
     let contactNavLink = document.querySelector('#desktop-header > nav > a[href$="contact"]');
-
+    let ticking = false;
     function checkVisibleElement() {
-
-        if (isInViewport(aboutSection)) {
-            aboutNavLink.classList.add("active-view");
-            skillsNavLink.classList.remove("active-view");
-            careerNavLink.classList.remove("active-view");
-            projectsNavLink.classList.remove("active-view");
-            contactNavLink.classList.remove("active-view");
-            //console.log(1);
-        } else if (isInViewport(skillsSection)) {
-            aboutNavLink.classList.remove("active-view");
-            skillsNavLink.classList.add("active-view");
-            careerNavLink.classList.remove("active-view");
-            projectsNavLink.classList.remove("active-view");
-            contactNavLink.classList.remove("active-view");
-            //console.log(2);
-        } else if (isInViewport(careerSection)) {
-            aboutNavLink.classList.remove("active-view");
-            skillsNavLink.classList.remove("active-view");
-            careerNavLink.classList.add("active-view");
-            projectsNavLink.classList.remove("active-view");
-            contactNavLink.classList.remove("active-view");
-            //console.log(3);
-        } else if (isInViewport(projectsSection)) {
-            aboutNavLink.classList.remove("active-view");
-            skillsNavLink.classList.remove("active-view");
-            careerNavLink.classList.remove("active-view");
-            projectsNavLink.classList.add("active-view");
-            contactNavLink.classList.remove("active-view");
-            //console.log(4);
-        } else if (isInViewport(contactSection)) {
-            aboutNavLink.classList.remove("active-view");
-            skillsNavLink.classList.remove("active-view");
-            careerNavLink.classList.remove("active-view");
-            projectsNavLink.classList.remove("active-view");
-            contactNavLink.classList.add("active-view");
-            //console.log(5);
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                if (isInViewport(aboutSection)) {
+                    aboutNavLink.classList.add("active-view");
+                    skillsNavLink.classList.remove("active-view");
+                    careerNavLink.classList.remove("active-view");
+                    projectsNavLink.classList.remove("active-view");
+                    contactNavLink.classList.remove("active-view");
+                    //console.log(1);
+                } else if (isInViewport(skillsSection)) {
+                    aboutNavLink.classList.remove("active-view");
+                    skillsNavLink.classList.add("active-view");
+                    careerNavLink.classList.remove("active-view");
+                    projectsNavLink.classList.remove("active-view");
+                    contactNavLink.classList.remove("active-view");
+                    //console.log(2);
+                } else if (isInViewport(careerSection)) {
+                    aboutNavLink.classList.remove("active-view");
+                    skillsNavLink.classList.remove("active-view");
+                    careerNavLink.classList.add("active-view");
+                    projectsNavLink.classList.remove("active-view");
+                    contactNavLink.classList.remove("active-view");
+                    //console.log(3);
+                } else if (isInViewport(projectsSection)) {
+                    aboutNavLink.classList.remove("active-view");
+                    skillsNavLink.classList.remove("active-view");
+                    careerNavLink.classList.remove("active-view");
+                    projectsNavLink.classList.add("active-view");
+                    contactNavLink.classList.remove("active-view");
+                    //console.log(4);
+                } else if (isInViewport(contactSection)) {
+                    aboutNavLink.classList.remove("active-view");
+                    skillsNavLink.classList.remove("active-view");
+                    careerNavLink.classList.remove("active-view");
+                    projectsNavLink.classList.remove("active-view");
+                    contactNavLink.classList.add("active-view");
+                    //console.log(5);
+                }
+                ticking = false;
+            });
+            ticking = true;
         }
+
     }
     checkVisibleElement()
     document.addEventListener('scroll',  checkVisibleElement);
@@ -122,17 +128,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let form = document.getElementById("contact-form");
     let button = document.getElementById("my-form-button");
     let status = document.getElementById("my-form-status");
-
     function success() {
         form.reset();
-        button.style = "display: none ";
+        button.style.display = "none";
         status.innerHTML = "Thanks!";
     }
-
     function error() {
         status.innerHTML = "Oops! There was a problem.";
     }
-
     form.addEventListener("submit", function(event) {
         event.preventDefault();
         let data = new FormData(form);

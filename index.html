@@ -130,10 +130,10 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Deferred Style -->
-    <link rel="preload" href="css/typography.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="css/form.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/typography.css" media="none" onload="if(media!=='all'){media='all';onload=null;}">
+    <link rel="stylesheet" href="css/form.css" media="none" onload="if(media!=='all'){media='all';onload=null;}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" media="none" onload="if(media!=='all'){media='all';onload=null;}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" media="none" onload="if(media!=='all'){media='all';onload=null;}">
     <noscript>
         <link rel="stylesheet" href="css/typography.css">
         <link rel="stylesheet" href="css/form.css">
@@ -190,7 +190,7 @@
 
 
     <!-- Intro -->
-    <div id="intro" class="lazy" data-background-image="images/intro-background.jpg">
+    <div id="intro" class="lazyload" data-bg="images/intro-background.jpg">
         <div id="intro-container">
             <h1>Hi, I'm Marco Russodivito</h1>
             <div id="typed-strings">
@@ -221,7 +221,7 @@
                 <div class="col-50">
                     <div id="info">
                         <div id="avatar-container">
-                            <img src="images/marco-russodivito.jpg" loading="lazy" alt="Marco Russodivito picture" />
+                            <img class="lazyload" src="" data-src="images/marco-russodivito.jpg" alt="Marco Russodivito picture"/>
                         </div>
                         <div id="basic-info">
                             <div><strong>Name</strong>: Marco Russodivito</div>
@@ -326,7 +326,7 @@
                     <h4><a href="https://www.istitutocomprensivojovinecb.edu.it/site/">Istituto Comprensivo Statale "Francesco Jovine"</a></h4>
                 </div>
                 <div class="formation-logo">
-                    <img class="lazy" src="" data-src="images/formation/logo-jovine.png" alt="elementary school jovine logo">
+                    <img class="lazyload" src="" data-src="images/formation/logo-jovine.png" alt="elementary school jovine logo">
                 </div>
             </div>
             <div class="formation">
@@ -339,7 +339,7 @@
                     <h5>Graduation score: 9/10</h5>
                 </div>
                 <div class="formation-logo">
-                    <img class="lazy" src="" data-src="images/formation/logo-jovine.png" alt="middle school jovine logo">
+                    <img class="lazyload" src="" data-src="images/formation/logo-jovine.png" alt="middle school jovine logo">
                 </div>
             </div>
             <div class="formation">
@@ -352,7 +352,7 @@
                     <h5>High school graduation score: 94/100</h5>
                 </div>
                 <div class="formation-logo">
-                    <img class="lazy" src="" data-src="images/formation/scientifico-low.png" alt="">
+                    <img class="lazyload" src="" data-src="images/formation/scientifico-low.png" alt="">
                 </div>
             </div>
             <div class="formation">
@@ -366,7 +366,7 @@
                     <h5>Bachelor's degree score: 110/110 summa cum laude</h5>
                 </div>
                 <div class="formation-logo">
-                    <img class="lazy" src="" data-src="images/formation/unimol-low.png" alt="">
+                    <img class="lazyload" src="" data-src="images/formation/unimol-low.png" alt="">
                 </div>
             </div>
             <div class="formation">
@@ -379,7 +379,7 @@
                     <h4><a href="https://www.unimol.it/">Università degli Studi del Molise</a></h4>
                 </div>
                 <div class="formation-logo">
-                    <img class="lazy" src="" data-src="images/formation/unimol-low.png" alt="">
+                    <img class="lazyload" src="" data-src="images/formation/unimol-low.png" alt="">
                 </div>
             </div>
         </section>
@@ -394,7 +394,7 @@
 
             <div class="row">
                 <div class="col-33 card">
-                    <img class="card-image lazy" src="" data-src="images/projects/antichi-sapori-saperi-antichi.png" alt=""/>
+                    <img class="card-image lazyload" src="" data-src="images/projects/antichi-sapori-saperi-antichi.png" alt=""/>
                     <h3 class="card-title">Antichi Sapori Saperi Antichi</h3>
                     <p class="card-description">Game of goose presented to Expo2015</p>
                     <div class="card-social-links">
@@ -407,7 +407,7 @@
                     </div>
                 </div>
                 <div class="col-33 card">
-                    <img class="card-image lazy" src="" data-src="images/projects/pokemon.png" alt=""/>
+                    <img class="card-image lazyload" src="" data-src="images/projects/pokemon.png" alt=""/>
                     <h3 class="card-title">Pokemon - version Unimol</h3>
                     <p class="card-description">University project to prove my skill in Java Object Oriented Programming</p>
                     <div class="card-social-links">
@@ -417,7 +417,7 @@
                     </div>
                 </div>
                 <div class="col-33 card">
-                    <img class="card-image lazy" src="" data-src="images/projects/unimol.png" alt=""/>
+                    <img class="card-image lazyload" src="" data-src="images/projects/unimol.png" alt=""/>
                     <h3 class="card-title">App Studenti Unimol</h3>
                     <p class="card-description">University project to prove my skill in Web Development, software engineering and Project management</p>
                     <div class="card-social-links">
@@ -435,7 +435,7 @@
             </div>
             <div class="row">
                 <div class="col-33 card">
-                    <img class="card-image lazy" src="" data-src="images/projects/autoscroc.png" alt=""/>
+                    <img class="card-image lazyload" src="" data-src="images/projects/autoscroc.png" alt=""/>
                     <h3 class="card-title">Autoscrocc</h3>
                     <p class="card-description">University project to prove my skill in Android Development and backend Development</p>
                     <div class="card-social-links">
@@ -448,7 +448,7 @@
                     </div>
                 </div>
                 <div class="col-33 card">
-                    <img class="card-image lazy"  src="" data-src="images/projects/officina-dei-giornalisti.png" alt=""/>
+                    <img class="card-image lazyload"  src="" data-src="images/projects/officina-dei-giornalisti.png" alt=""/>
                     <h3 class="card-title">Officina dei Giornalisti</h3>
                     <p class="card-description">Online newspaper directed by Lucrezia Cicchese</p>
                     <div class="card-social-links">
@@ -458,7 +458,7 @@
                     </div>
                 </div>
                 <div class="col-33 card">
-                    <img class="card-image lazy" src="" data-src="images/projects/2-faces.png" alt=""/>
+                    <img class="card-image lazyload" src="" data-src="images/projects/2-faces.png" alt=""/>
                     <h3 class="card-title">2Faces</h3>
                     <p class="card-description">New Android malware model developed for Bachelor's Degree thesis in collaboration of Ing. Francesco Mercaldo and Dott.ssa Rosangela Casolare</p>
                     <div class="card-social-links">
@@ -476,7 +476,7 @@
             </div>
             <div class="row">
                 <div class="col-33 card">
-                    <img class="card-image lazy" src="" data-src="images/projects/chef-marcello-gourmet-imports.png" alt=""/>
+                    <img class="card-image lazyload" src="" data-src="images/projects/chef-marcello-gourmet-imports.png" alt=""/>
                     <h3 class="card-title">Chef Marcello Gourmet Import</h3>
                     <p class="card-description">Online Store of Italian Gourmet Product</p>
                     <div class="card-social-links">
@@ -591,10 +591,10 @@
 
 
     <!-- Scripts -->
-    <script defer src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" integrity="sha256-SbjNN9cJzRfdpoa82bqXKC5uMg+oqbWvVAzPlubCdNc=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
     <script defer src="js/common.js"></script>
     <script defer src="js/main.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
 </body>
 </html>

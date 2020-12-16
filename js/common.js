@@ -2,12 +2,13 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     /** Lazy Loading **/
-    const observer = lozad('.lazy', {
-        rootMargin: '100px 0px',
-        threshold: 0.1,
-        enableAutoReload: true
+    document.addEventListener('lazybeforeunveil', function(e){
+        let bg = e.target.getAttribute('data-bg');
+        if(bg){
+            e.target.style.backgroundImage = 'url(' + bg + ')';
+        }
     });
-    observer.observe();
+
 
     /** Menu Script**/
     let hamburgerButton = document.getElementById("hamburger-button");
