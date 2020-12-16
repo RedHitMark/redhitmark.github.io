@@ -1,13 +1,14 @@
 "use strict";
 
+document.addEventListener('lazybeforeunveil', function(e){
+    let bg = e.target.getAttribute('data-bg');
+    if(bg){
+        e.target.style.backgroundImage = 'url(' + bg + ')';
+    }
+});
 document.addEventListener("DOMContentLoaded", function() {
     /** Lazy Loading **/
-    document.addEventListener('lazybeforeunveil', function(e){
-        let bg = e.target.getAttribute('data-bg');
-        if(bg){
-            e.target.style.backgroundImage = 'url(' + bg + ')';
-        }
-    });
+
 
 
     /** Menu Script**/
