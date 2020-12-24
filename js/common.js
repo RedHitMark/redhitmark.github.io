@@ -1,16 +1,12 @@
-"use strict";
-
+/** Lazy Loading **/
 document.addEventListener('lazybeforeunveil', function(e){
     let bg = e.target.getAttribute('data-bg');
     if(bg){
         e.target.style.backgroundImage = 'url(' + bg + ')';
     }
 });
+
 document.addEventListener("DOMContentLoaded", function() {
-    /** Lazy Loading **/
-
-
-
     /** Menu Script**/
     let hamburgerButton = document.getElementById("hamburger-button");
     let closeMobileMenuButton = document.getElementById("close-mobile-menu-button");
@@ -30,6 +26,4 @@ document.addEventListener("DOMContentLoaded", function() {
     mobileMenuLinks.forEach((button) => {
         button.addEventListener("click", closeMenu);
     });
-
-
 });

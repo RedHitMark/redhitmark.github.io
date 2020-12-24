@@ -2,50 +2,38 @@
 body, input, select, textarea {
     font-family: "Roboto Light", "Segoe UI", Arial, Helvetica, sans-serif;
     color: #555555;
-    font-size: calc(14px + 0.35vw); /* Responsive base font size */
-    line-height: calc(14px + 1.05vw); /* Responsive Vertical Rhythm */
+    font-size: calc(15px + 0.35vw);
+    line-height: calc(15px + 1.05vw);
 }
 h1 {
     font-size: 1.912em;
-    line-height: calc(18px + 1.8vw); /* Responsive Vertical Rhythm */
+    line-height: calc(20px + 1.8vw);
 }
 h2 {
     font-size: 1.616em;
-    line-height: calc(18px + 1vw); /* Responsive Vertical Rhythm */
+    line-height: calc(20px + 1vw);
 }
 h3 {
     font-size: 1.471em;
-    line-height: calc(18px + 0.7vw); /* Responsive Vertical Rhythm */
+    line-height: calc(20px + 0.7vw);
 }
 h4 { font-size: 1.3em; }
 h5 { font-size: 1.243em; }
 h6 { font-size: 1.132em; }
 h4, h5, h6 {
-    line-height: calc(18px + .2vw); /* Responsive Vertical Rhythm */
+    line-height: calc(20px + .2vw);
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', "Segoe UI", sans-serif;
     color: #090909;
-    margin: calc(12px + 1.05vw) 0; /* Responsive margins */
+    margin: calc(12px + 1.05vw) 0;
 }
-
-
-/** Hyperlink **/
 a {
     text-decoration: none;
     color: #111111;
 }
-
-
-/** Alignment **/
-.text-left {
-    text-align: left;
-}
-.text-center {
-    text-align: center;
-}
-.text-right {
-    text-align: right;
+strong {
+    font-weight: 500;
 }
 
 
