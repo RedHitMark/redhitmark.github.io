@@ -26,12 +26,12 @@ jobs:
       - name: Copy
         uses: canastro/copy-action@0.0.2
         with:
-          source: ./dist/redhitmark/index.html
-          target: ./dist/redhitmark/404.html
+          source: ./dist/browser/index.html
+          target: ./dist/browser/404.html
 
       - name: Deploy
         if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/redhitmark
+          publish_dir: ./dist/browser

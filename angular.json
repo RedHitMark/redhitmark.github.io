@@ -3,28 +3,28 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "redhitmark": {
+    "redhitmark.github.io": {
+      "root": "",
+      "prefix": "app",
+      "sourceRoot": "src",
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/redhitmark",
+            "outputPath": "dist",
+            "browser": "src/main.ts",
             "index": "src/index.html",
-            "main": "src/main.ts",
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               "src/manifest.json",
               "src/assets"
@@ -34,49 +34,36 @@
             ],
             "scripts": []
           },
+          "defaultConfiguration": "production",
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
-              "outputHashing": "all"
+              "sourceMap": false,
+              "optimization": true,
+              "extractLicenses": true
             },
             "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "optimization": false,
+              "extractLicenses": false
             }
-          },
-          "defaultConfiguration": "production"
+          }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "defaultConfiguration": "development",
           "configurations": {
             "production": {
-              "browserTarget": "redhitmark:build:production"
+              "browserTarget": "redhitmark.github.io:build:production"
             },
             "development": {
-              "browserTarget": "redhitmark:build:development"
+              "browserTarget": "redhitmark.github.io:build:development"
             }
-          },
-          "defaultConfiguration": "development"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "redhitmark:build"
+            "browserTarget": "redhitmark.github.io:build"
           }
         },
         "test": {
@@ -100,8 +87,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
