@@ -1,0 +1,9 @@
+<div class="flex flex-row flex-wrap gap-x-8 gap-y-2 justify-center mb-2">
+  @for (category of categories; track $index) {
+    <p class="uppercase hover:font-bold hover:underline hover:underline-offset-4 text-xs"
+       (click)="selectCategory(category)"
+       [ngClass]="category === selectedCategory? 'font-bold underline underline-offset-4' : ''">
+      {{category}}
+    </p>
+  }
+</div>

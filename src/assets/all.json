@@ -1,0 +1,259 @@
+{
+  "roles": [
+    "Software_Engineer_",
+    "Fullstack_Developer_",
+    "Cybersecurity_Expert",
+    "ML_Engineer_"
+  ],
+  "intro": "I am a dedicated and hardworking person with a strong sense of responsibility and duty. I enjoy working in team to learn new things, to achieve goals and obtain excellent results. My passion is creating secure, efficient, and dependable applications for businesses and individuals. Thanks to my cybersecurity education, I recognize the significance of developing and deploying secure architectures applying cybersecurity best practises, I am able to identify and address vulnerabilities in software applications, ensuring the highest security standards.",
+  "skills": [
+    {
+      "title": "Spring Boot",
+      "type": "Backend"
+    },
+    {
+      "title": "express.js",
+      "type": "Backend"
+    },
+    {
+      "title": "FastAPI",
+      "type": "Backend"
+    },
+    {
+      "title": "Angular",
+      "type": "Frontend"
+    },
+    {
+      "title": "VueJS",
+      "type": "Frontend"
+    },
+    {
+      "title": "Android",
+      "type": "Mobile"
+    },
+    {
+      "title": "Ionic",
+      "type": "Mobile"
+    },
+    {
+      "title": "Python",
+      "type": "Language"
+    },
+    {
+      "title": "Java",
+      "type": "Language"
+    },
+    {
+      "title": "Javascript",
+      "type": "Language"
+    },
+    {
+      "title": "Git",
+      "type": "DevOps"
+    },
+    {
+      "title": "Docker",
+      "type": "DevOps"
+    },
+    {
+      "title": "Kubernetes",
+      "type": "DevOps"
+    },
+    {
+      "title": "GitLab CI/CD",
+      "type": "DevOps"
+    },
+    {
+      "title": "GitHub Actions",
+      "type": "DevOps"
+    },
+    {
+      "title": "AWS",
+      "type": "DevOps"
+    },
+    {
+      "title": "Teamwork",
+      "type": "Soft"
+    },
+    {
+      "title": "Problem solving",
+      "type": "Soft"
+    },
+    {
+      "title": "Time management",
+      "type": "Soft"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Digitaliziamo il carnevale di Larino",
+      "description": "Winner of the \"Digitalizziamo il Carnevale di Larino\" competition held by Università degli Studi del Molise with the aim of enhancing the Carnival of Larino.",
+      "date": "2022"
+    },
+    {
+      "title": "Premio Tesi CLUSIT",
+      "description": "Premio Tesi CLUSIT “Innovare la sicurezza delle informazioni” 16th edition",
+      "date": "2021"
+    },
+    {
+      "title": "CyberChallenge.IT 2020",
+      "description": "Participant of the CyberChallenge.IT 2020 project rganized by the Cybersecurity National Lab, with the support and help of cybersecurity experts from Italian universities and professionals from the business world.",
+      "date": "2020"
+    },
+    {
+      "title": "Vivaio scuole - EXPO 2016",
+      "description": "Winning the \"Vivaio scuole\" competition for EXPO 2016 by designing and implementing a video game with the aim of enhancing the traditions of the Molise region.",
+      "date": "2016"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "VMware Spring Professional (2V0-72.22)",
+      "date": "2023"
+    },
+    {
+      "title": "ISEE II - Trinity College London",
+      "date": "2016"
+    }
+  ],
+  "educations": [
+    {
+      "title": "Master of Science in Cyber Security",
+      "description": "Recommender Systems for Software Development: Is Your Background Knowledge Secured?",
+      "dateStart": "2019",
+      "dateEnd": "2022",
+      "score": "110/110 cum laude"
+    },
+    {
+      "title": "Bachelor of Science in Computer Science",
+      "description": "2Faces: a new model of malware based on dynamic compiling and reflection of distributed malicious payloads",
+      "dateStart": "2015",
+      "dateEnd": "2019",
+      "score": "110/110 cum laude"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Machine Learning engineer",
+      "employee": "University of Molise",
+      "description": "Development and release of a deep learning model for institutional text simplification (VerbACxSS - PRIN 2020).",
+      "dateStart": "02/2023",
+      "dateEnd": "Ongoing"
+    },
+    {
+      "title": "Software and Data engineer",
+      "employee": "Datasound srl",
+      "description": "Maintenance and evolution of 2Vita-B, a virtual assistant for Home Rehabilitation.\nManagement and supervisione of the development team of votive lamp contract management system.\nDevelopment of an ETL data pipeline and PowerBI dashboards.",
+      "dateStart": "01/2023",
+      "dateEnd": "Ongoing"
+    },
+    {
+      "title": "Machine Learning engineer",
+      "employee": "University of Molise",
+      "description": "Development of predictive algorithms for a diagnostic support system based on postual and gait data.\nDevelopment of a predictive algorithm for estimating the blood pressure using PPG signal and Android Wear.",
+      "dateStart": "06/2022",
+      "dateEnd": "12/2022"
+    },
+    {
+      "title": "Full-stack developer & DevOps engineer",
+      "employee": "Datasound srl",
+      "description": "Development and release of the HERMES application, a system for managing points of interest in Tunisia.",
+      "dateStart": "05/2022",
+      "dateEnd": "06/2022"
+    },
+    {
+      "title": "Software engineer",
+      "employee": "University of Molise",
+      "description": "Testing, development, maintenance and clinical trial of the applied research project ATTICUS, an healthcare system.",
+      "dateStart": "04/2021",
+      "dateEnd": "04/2022"
+    },
+    {
+      "title": "Freelancer",
+      "description": "implementation of several website, such agrpoint.it, silverodabate.it",
+      "dateStart": "2015",
+      "dateEnd": "2019"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Chef",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "img": "assets/projects/chef-marcello-gourmet-imports.png",
+      "technologies": [
+        "Wordpress",
+        "PHP",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Pokémon version unimol",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "img": "assets/projects/pokemon.png",
+      "technologies": [
+        "Ionic",
+        "Angular"
+      ]
+    },
+    {
+      "title": "2_FACES_NET",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "img": "assets/projects/2-faces-net.png",
+      "technologies": [
+        "Ionic",
+        "Angular"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "title": "Machine Learning-Based Qualitative Analysis of Human Gait Through Video Features",
+      "authors": "N Balletti, R Zinni, M Russodivito, G Laudato, S Scalabrino, R Oliveto",
+      "venue": "HEALTHINF",
+      "year": "2024"
+    },
+    {
+      "title": "StegWare: A Novel Malware Model Exploiting Payload Steganography and Dynamic Compilation",
+      "authors": "D Albanese, R Casolare, G Ciaramella, G Iadarola, F Martinelli, F Mercaldo, M Russodivito, A Santone",
+      "venue": "ICISSP",
+      "year": "2023"
+    },
+    {
+      "title": "ST-Segment Anomalies Detection from Compressed Sensing Based ECG Data by Means of Machine Learning",
+      "authors": "G Rosa, M Russodivito, G Laudato, AR Colavita, L De Vito, F Picariello, S Scalabrino, I Tudosa, R Oliveto",
+      "venue": "BIOSTEC",
+      "year": "2023"
+    },
+    {
+      "title": "Multi-class Detection of Arrhythmia Conditions Through the Combination of Compressed Sensing and Machine Learning",
+      "authors": "G Rosa, M Russodivito, G Laudato, AR Colavita, L De Vito, F Picariello, S Scalabrino, I Tudosa, R Oliveto",
+      "venue": "BIOSTEC",
+      "year": "2023"
+    },
+    {
+      "title": "A Robust Approach for a Real-time Accurate Screening of ST Segment Anomalies",
+      "authors": "G Rosa, M Russodivito, G Laudato, AR Colavita, S Scalabrino, R Oliveto",
+      "venue": "HEALTHINF",
+      "year": "2022"
+    },
+    {
+      "title": "A Multi-Class Approach for the Automatic Detection of Congestive Heart Failure in Windowed ECG",
+      "authors": "G Rosa, M Russodivito, G Laudato, S Scalabrino, AR Colavita, R Oliveto",
+      "venue": "MEDINF",
+      "year": "2021"
+    },
+    {
+      "title": "2Faces: a new model of malware based on dynamic compiling and reflection",
+      "authors": "R Casolare, G Lacava, F Martinelli, F Mercaldo, M Russodivito, A Santone",
+      "venue": "Journal of Computer Virology and Hacking Techniques",
+      "year": "2021"
+    }
+  ],
+  "contact": {
+    "email": "russodivito.marco@gmail.com",
+    "github": "https://github.com/RedHitMark",
+    "gitlab": "https://gitlab.com/RedHitMark",
+    "linkedin": "https://www.linkedin.com/in/marco-russodivito/"
+  }
+}

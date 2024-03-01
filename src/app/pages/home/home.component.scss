@@ -1,0 +1,140 @@
+#header {
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  padding: 1em;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.8);
+  z-index: 5;
+}
+#header > #desktop-header {
+  display: block;
+}
+#header > #desktop-header > #desktop-logo {
+  float: left;
+}
+#header > #desktop-header > #desktop-logo > a {
+  color: white;
+}
+#header > #desktop-header > nav {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header > #desktop-header > nav > a {
+  color: white;
+  padding-left: 1em;
+}
+#header > #desktop-header > nav > a:hover,
+#header > #desktop-header > nav > a.active-view {
+  color: #2196F3;
+}
+#header > #mobile-header {
+  display: none;
+}
+#header > #mobile-header > #mobile-logo {
+  float: left;
+}
+#header > #mobile-header > #mobile-logo > a {
+  color: white;
+}
+#header > #mobile-header > #hamburger-button {
+  float: right;
+  color: white;
+  font-weight: bolder;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+#header > #mobile-header > #mobile-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow: hidden;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header > #mobile-header > #mobile-menu > #close-mobile-menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  font-size: 1.5em;
+  line-height: 0.5;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+}
+#header > #mobile-header > #mobile-menu > nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+#header > #mobile-header > #mobile-menu > nav > a {
+  color: white;
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+@media (max-width: 800px) {
+  #header > #desktop-header {
+    display: none;
+  }
+  #header > #mobile-header {
+    display: block;
+  }
+}
+
+
+#intro {
+  background: url(../../../assets/intro-background.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 40vh;
+  #profile-picture {
+    width: 30%;
+    padding: 0.5em;
+    img {
+      position: relative;
+      //top: 4em;
+      width: 100%;
+    }
+  }
+  #main-info {
+    width: 70%;
+    color: white !important;
+    padding: 0.5em;
+    text-align: center;
+    h1 {
+      color: white !important;
+    }
+    h2 {
+      color: white !important;
+    }
+    dt {
+      float: left;
+      font-weight: bold;
+    }
+    dd {
+      padding-left: 100px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  #intro-wrapper {
+    #profile-picture {
+      width: 100% !important;
+    }
+    #main-info {
+      width: 100% !important;
+    }
+  }
+}

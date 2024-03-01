@@ -1,0 +1,116 @@
+{
+  "name": "Marco Russodivito – Italian Full-Stack Developer",
+  "short_name": "Marco Russodivito",
+  "description": "I'm Marco Russodivito, a full stack developer precise and attentive to detail. I love working in group to improve myself. Great sense of responsibility and duty that leads me to a strong spirit of sacrifice.",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "English",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "scope": "https://redhitmark.github.io",
+  "start_url": "https://redhitmark.github.io/index.html",
+  "icons": [
+    {
+      "src": "https://redhitmark.github.io/images/favicon/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-57x57.png",
+      "sizes": "57x57",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-60x60.png",
+      "sizes": "60x60",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/mstile-70x70.png",
+      "sizes": "70x70",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-76x76.png",
+      "sizes": "76x76",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-114x114.png",
+      "sizes": "114x114",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-120x120.png",
+      "sizes": "120x120",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/favicon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/mstile-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/apple-touch-icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/favicon-196x196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/mstile-310x310.png",
+      "sizes": "310x310",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://redhitmark.github.io/images/favicon/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
