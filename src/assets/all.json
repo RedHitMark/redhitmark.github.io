@@ -36,6 +36,30 @@
       "type": "Mobile"
     },
     {
+      "title": "MySQL",
+      "type": "Database"
+    },
+    {
+      "title": "MongoDB",
+      "type": "Database"
+    },
+    {
+      "title": "Hugging Face",
+      "type": "Data&ML"
+    },
+    {
+      "title": "Tensorflow",
+      "type": "Data&ML"
+    },
+    {
+      "title": "Sklearn",
+      "type": "Data&ML"
+    },
+    {
+      "title": "Pandas",
+      "type": "Data&ML"
+    },
+    {
       "title": "Python",
       "type": "Language"
     },
@@ -177,23 +201,11 @@
   ],
   "projects": [
     {
-      "title": "Chef",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "img": "assets/projects/chef-marcello-gourmet-imports.png",
-      "technologies": [
-        "Wordpress",
-        "PHP",
-        "HTML",
-        "CSS"
-      ]
-    },
-    {
       "title": "Pokémon version unimol",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "img": "assets/projects/pokemon.png",
       "technologies": [
-        "Ionic",
-        "Angular"
+        "Java"
       ]
     },
     {
@@ -201,8 +213,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "img": "assets/projects/2-faces-net.png",
       "technologies": [
-        "Ionic",
-        "Angular"
+        "Android"
       ]
     }
   ],
