@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://redhitmark.github.io/</loc>
+        <lastmod>2020-12-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://redhitmark.github.io/images/marco-russodivito.jpg</image:loc>
+            <image:title>Marco Russodivito</image:title>
+            <image:caption>Marco Russodivito is an Italian back end developer expert in cybersecurity</image:caption>
+            <image:geo_location>Campobasso, Molise, Italia</image:geo_location>
+        </image:image>
+    </url>
+</urlset>
