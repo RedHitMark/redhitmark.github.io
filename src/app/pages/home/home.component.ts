@@ -1,7 +1,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {EducationComponent} from '../../components/education/education.component';
 import {ProjectComponent} from '../../components/project/project.component';
-import {NgForOf, NgOptimizedImage, SlicePipe} from '@angular/common';
+import {NgOptimizedImage, SlicePipe, ViewportScroller} from '@angular/common';
 import {PublicationComponent} from '../../components/publication/publication.component';
 import {WorkComponent} from '../../components/work/work.component';
 import {SkillComponent} from '../../components/skill/skill.component';
@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit{
   public selectedSkillCategories: string;
   // public numberWorksToShow: number;
 
-  constructor() {
+  constructor(private viewportScroller: ViewportScroller) {
     this.cv = all;
 
     this.skillCategories = this.cv.skills.map(skill => skill.type).filter((value, index, self) => self.indexOf(value) === index);
@@ -58,12 +58,13 @@ export class HomeComponent implements OnInit{
   public ngOnInit(): void {
   }
 
-  @HostListener('window:scroll', ['$event']) // for window scroll events
-  public onScroll(event: Event) : void {
-  }
-
   public changeSkillCategories(category: string): void {
     this.selectedSkillCategories = category;
+  }
+
+  public onClickScroll(element: string): void {
+    this.viewportScroller.setOffset([0, 80])
+    this.viewportScroller.scrollToAnchor(element);
   }
 
   public loadMoreWorks(): void {

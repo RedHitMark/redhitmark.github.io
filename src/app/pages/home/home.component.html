@@ -3,15 +3,15 @@
   <div id="desktop-header">
     <div id="desktop-logo"><a href="#intro">Marco Russodivito</a></div>
     <nav>
-      <a routerLink="/" fragment="intro">About</a>
-      <a routerLink="/" fragment="skills">Skills</a>
-      <a routerLink="/" fragment="experiences">Experience</a>
-      <a routerLink="/" fragment="education">Education</a>
-      <a routerLink="/" fragment="projects">Projects</a>
-      <a routerLink="/" fragment="certifications">Certifications</a>
-      <a routerLink="/" fragment="awards">Awards</a>
-      <a routerLink="/" fragment="papers">Papers</a>
-      <a routerLink="/" fragment="contact">Contact</a>
+      <a (click)="onClickScroll('about')">About</a>
+      <a (click)="onClickScroll('skills')">Skills</a>
+      <a (click)="onClickScroll('experiences')">Experiences</a>
+      <a (click)="onClickScroll('certifications')">Certifications</a>
+      <a (click)="onClickScroll('awards')">Awards</a>
+      <a (click)="onClickScroll('educations')">Education</a>
+      <a (click)="onClickScroll('projects')">Projects</a>
+      <a (click)="onClickScroll('publications')">Publications</a>
+      <a (click)="onClickScroll('contact')">Contact</a>
     </nav>
   </div>
   <div id="mobile-header">
@@ -50,13 +50,13 @@
 <!-- Main -->
 <main class="flex flex-col items-center w-full max-w-screen-xl mx-auto px-8">
   <!-- About -->
-  <section class="container my-4 relative">
+  <section id="about" class="container my-4 relative">
     <h2 class="mb-4">Hi_</h2>
     <p class="text-justify">{{cv.intro}}</p>
   </section>
 
   <!-- Skills -->
-  <section id="skill" class="container my-4 relative">
+  <section id="skills" class="container my-4 relative">
     <h2 class="mb-3">Skills_</h2>
     @for (skill of (cv.skills | filterSkills: selectedSkillCategories); track $index) {
       <app-skill [skill]="skill"></app-skill>
@@ -65,15 +65,15 @@
   </section>
 
   <!-- Working experiences -->
-  <section class="container my-4 relative">
-    <h2 class="mb-4">Work experience_</h2>
+  <section id="experiences" class="container my-4 relative">
+    <h2 class="mb-4">Experiences_</h2>
     @for (work of cv.experiences; track $index) {
       <app-work [work]="work"></app-work>
     }
   </section>
 
   <!-- Certifications -->
-  <section class="container my-4 relative">
+  <section id="certifications" class="container my-4 relative">
     <h2 class="mb-4">Certifications_</h2>
     @for (certification of cv.certifications; track $index) {
       <app-certification [certification]="certification"></app-certification>
@@ -81,7 +81,7 @@
   </section>
 
   <!-- Awards -->
-  <section class="container my-4 relative">
+  <section id="awards" class="container my-4 relative">
     <h2 class="mb-4">Awards_</h2>
     @for (award of cv.awards; track $index) {
       <app-award [award]="award"></app-award>
@@ -89,7 +89,7 @@
   </section>
 
   <!-- Education -->
-  <section class="container my-4 relative">
+  <section id="educations" class="container my-4 relative">
     <h2 class="mb-4">Education_</h2>
     @for (education of cv.educations; track $index) {
       <app-education [education]="education"></app-education>
@@ -97,7 +97,7 @@
   </section>
 
   <!-- Projects -->
-  <section class="container my-4 relative">
+  <section id="projects" class="container my-4 relative">
     <h2 class="mb-4">Projects_</h2>
     <div class="flex flex-row gap-2">
       @for (project of cv.projects; track $index) {
@@ -109,8 +109,8 @@
   </section>
 
   <!-- Papers -->
-  <section class="container my-4 relative">
-    <h2 class="mb-4">Papers_</h2>
+  <section id="publications" class="container my-4 relative">
+    <h2 class="mb-4">Publications_</h2>
     <div class="flex flex-col gap-8">
       @for (publication of cv.publications; track $index) {
         <app-publication [publication]="publication"></app-publication>
